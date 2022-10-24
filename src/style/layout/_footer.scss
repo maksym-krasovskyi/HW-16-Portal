@@ -1,0 +1,74 @@
+@use '../abstracts/_variables.scss' as var;
+@use '../base/_typography';
+@use '../base/containers';
+
+.footer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: var.$footer_bg;
+
+    &__container {
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 64px 0 61px;
+    }
+
+    &__logo {
+        max-width: 128px;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        max-width: 782px;
+    }
+
+    &__upper {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin: 0 0 84px;
+        gap: 111px;
+    }
+
+    &__lower {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 21px;
+    }
+
+    &__lower-body {
+        color: var.$medium_grey_footer;
+    }
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    max-width: 108px;
+    width: 100%;
+
+    &__list {
+        list-style: none;
+    }
+
+    &__item {
+        margin: 0 0 17px;
+    }
+}
+
+.sign-up {
+    max-width: 264px;
+
+    &__body {
+        color: var.$medium_grey_footer;
+        margin: 0 0 15px;
+    }
+
+    &__btn {
+        margin: 0 0 52px;
+    }
+}

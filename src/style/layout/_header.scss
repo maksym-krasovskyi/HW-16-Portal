@@ -1,0 +1,45 @@
+@use '../abstracts/_variables.scss' as var;
+@use '../base/_typography';
+@use '../base/containers';
+
+.header {
+    display: flex;
+    justify-content: center;
+
+    &__body {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        margin: 22px 0 10px;
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: row;
+        max-width: 485px;
+        margin: 25px 0 27px;
+        gap: 100px;
+    }
+}
+
+.nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    max-width: 293px;
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        gap: 48px;
+    }
+}
+
+.login {
+    display: flex;
+    width: 92px;
+}

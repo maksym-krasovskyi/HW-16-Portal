@@ -1,0 +1,56 @@
+@use '../abstracts/_variables.scss' as var;
+@use '../base/_typography';
+@use '../base/containers';
+
+.built-in {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        margin: 90px 0 53px;
+    }
+
+    &__content-right {
+        display: flex;
+        flex-direction: column;
+        max-width: 416px;
+    }
+
+    &__logo {
+        margin: 0 0 13px;
+        max-width: 60px;
+    }
+
+    &__heading {
+        margin: 0 0 20px;
+        color: var.$dark_dlue;
+    }
+
+    &__body {
+        margin: 0 0 46px;
+        color: var.$medium_grey;
+    }
+
+    &__link {
+        color: var.$dark_dlue;
+    }
+
+    &__content-left {
+        display: flex;
+        flex-direction: column;
+        max-width: 840px;
+        align-items: center;
+    }
+
+    &__img {
+        max-width: 840px;
+    }
+
+    &__text {
+        max-width: 465px;
+        color: var.$lite_grey;
+    }
+}

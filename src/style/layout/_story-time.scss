@@ -1,0 +1,50 @@
+@use '../abstracts/_variables.scss' as var;
+@use '../base/_typography';
+@use '../base/containers';
+
+.story-time {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-image: url('../img/story_time.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__content {
+        margin: 325px 0 56px;
+        color: var.$white;
+        border-left: 4px solid var.$blue;
+        padding: 0 0 0 24px;
+    }
+
+    &__heading {
+        max-width: 426px;
+        margin: 0 0 20px;
+    }
+
+    &__subheading {
+        max-width: 427px;
+        margin: 0 0 23px;
+    }
+}
+
+.efects {
+    color: var.$white;
+    margin: 0 0 58px;
+
+    &__masks {
+        margin: 0 0 16px;
+    }
+
+    &__masks,
+    &__perfect {
+        padding: 0 0 0 24px;
+        border-left: 4px solid var.$medium_grey;
+    }
+}

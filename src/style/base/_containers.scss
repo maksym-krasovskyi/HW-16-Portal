@@ -1,0 +1,24 @@
+@use '../abstracts/_variables.scss' as var;
+@use '../base/_typography';
+
+.main,
+.footer {
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    max-width: 1322px;
+    width: 100%;
+    padding: 0 29px;
+}
+
+.container-1 {
+    display: flex;
+    max-width: 1348px;
+    width: 100%;
+    padding: 0 29px;
+}

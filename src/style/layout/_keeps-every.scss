@@ -1,0 +1,49 @@
+@use '../abstracts/_variables.scss' as var;
+@use '../base/_typography';
+@use '../base/containers';
+
+.keeps-every {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background: linear-gradient(to bottom, var.$bg_white 50%, var.$bg_blue 50%);
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    &__heading {
+        max-width: 800px;
+        margin: 0 0 35px;
+        color: var.$dark_dlue;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        gap: 159px;
+        margin: 0 0 56px 98px;
+    }
+}
+
+.action,
+.view {
+    max-width: 357px;
+
+    &__heading {
+        margin: 32px 0 10px;
+        color: var.$dark_dlue;
+    }
+
+    &__body {
+        margin: 0 0 15px;
+        color: var.$dark_grey;
+    }
+
+    &__link {
+        color: var.$dark_dlue;
+    }
+}

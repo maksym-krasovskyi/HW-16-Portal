@@ -1,0 +1,41 @@
+@use '../abstracts/_variables.scss' as var;
+@use '../base/_typography';
+@use '../base/containers';
+
+.messengers {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    &__container {
+        margin: 0 0 115px;
+    }
+
+    &__content {
+        margin: 8px 0 0;
+    }
+
+    &__logo {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+        margin: 0 0 17px;
+    }
+
+    &__heading {
+        max-width: 459px;
+        margin: 0 0 20px;
+        color: var.$dark_dlue;
+    }
+
+    &__subheading {
+        max-width: 485px;
+        margin: 0 0 16px;
+        color: var.$medium_grey;
+    }
+
+    &__body {
+        max-width: 505px;
+        color: var.$lite_grey;
+    }
+}

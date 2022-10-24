@@ -1,0 +1,71 @@
+@use '../abstracts/_variables.scss' as var;
+@use '../base/_typography';
+@use '../base/containers';
+
+.banner {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-image: url('../img/banner.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    max-width: 1440px;
+
+    &__container {
+        flex-direction: column;
+        width: 100%;
+        position: relative;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        max-width: 430px;
+        margin: 195px 0 189px;
+    }
+
+    &__heading {
+        margin: 0 0 17px;
+        color: var.$dark_dlue;
+    }
+
+    &__subheading {
+        margin: 0 0 40px;
+    }
+
+    &__btn {
+        display: flex;
+        max-width: 330px;
+        width: 100%;
+        flex-direction: row;
+        gap: 27px;
+        align-items: center;
+    }
+
+    &__btn-desc {
+        color: var.$dark_dlue;
+    }
+}
+
+.special-offer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    bottom: -22px;
+    left: -88px;
+    gap: 17px;
+    background-color: #f1c0c7;
+
+    &__img {
+        margin: 16px 0 16px 88px;
+    }
+
+    &__text {
+        max-width: 288px;
+        width: 100%;
+        margin: 0 23px 0 0;
+        color: var.$dark_dlue;
+    }
+}

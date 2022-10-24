@@ -1,0 +1,60 @@
+@use '../abstracts/_variables.scss' as var;
+@use '../base/_typography';
+@use '../base/containers';
+
+.models {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    max-width: 1440px;
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+        margin: 114px 0 28px;
+    }
+}
+
+.models-cell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 1 304px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    &__heading {
+        margin: 447px 0 1px;
+        color: var.$white;
+    }
+
+    &__body {
+        max-width: 203px;
+        margin: 0 0 5px;
+        color: var.$white;
+        text-align: center;
+    }
+
+    &__link {
+        margin: 0 0 22px;
+        color: var.$white;
+    }
+}
+
+.cell-1 {
+    background-image: url('../img/Portal\ TV.png');
+}
+
+.cell-2 {
+    background-image: url('../img/Portal.png');
+}
+
+.cell-3 {
+    background-image: url('../img/Portal+.png');
+}
+
+.cell-4 {
+    background-image: url('../img/Portal Mini.png');
+}
