@@ -6,15 +6,47 @@
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    color: var.$black;
     transition: 0.6s, filter 0.6s ease-in-out;
 }
 
-.btn-1 {
+.btn-s {
     flex: 0 0 92px;
     height: 28px;
+}
+
+.btn-m {
+    max-width: 103px;
+    width: 100%;
+    height: 40px;
+}
+
+.btn-l {
+    max-width: 108px;
+    width: 100%;
+    height: 46px;
+}
+
+.btn-xl {
+    flex: 0 0 186px;
+    height: 46px;
+}
+
+.btn-xxl {
+    flex: 0 0 193px;
+    height: 46px;
+}
+
+.btn-outline {
+    border: solid 1px var.$black;
     border-radius: 4px;
-    border: solid 1px var.$btn_1;
+}
+
+.btn-rounded {
+    border-radius: 24px;
+}
+
+.btn-success {
+    border-color: var.$btn_1;
     color: var.$dark_dlue;
 
     &:hover {
@@ -24,10 +56,7 @@
     }
 }
 
-.btn-2 {
-    flex: 0 0 186px;
-    height: 46px;
-    border-radius: 24px;
+.btn-secondary {
     background-color: var.$white;
     color: var.$dark_dlue;
 
@@ -37,11 +66,7 @@
     }
 }
 
-.btn-3 {
-    max-width: 108px;
-    width: 100%;
-    height: 46px;
-    border-radius: 24px;
+.btn-primary {
     background-color: var.$medium_blue;
     color: var.$white;
 
@@ -49,33 +74,5 @@
         background-color: var.$white;
         color: var.$dark_dlue;
         border: 1px solid var.$medium_blue;
-    }
-}
-
-.btn-4 {
-    max-width: 193px;
-    width: 100%;
-    height: 46px;
-    border-radius: 24px;
-    background-color: var.$white;
-    color: var.$dark_dlue;
-
-    &:hover {
-        background-color: var.$medium_blue;
-        color: var.$white;
-    }
-}
-
-.btn-5 {
-    max-width: 103px;
-    width: 100%;
-    height: 40px;
-    border-radius: 24px;
-    background-color: var.$white;
-    color: var.$dark_dlue;
-
-    &:hover {
-        background-color: var.$medium_blue;
-        color: var.$white;
     }
 }

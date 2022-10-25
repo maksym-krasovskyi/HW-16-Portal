@@ -27,7 +27,8 @@
     }
 
     &__body {
-        margin: 0 0 37px;
+        padding: 0 0 22px;
+        margin: 0 0 15px;
         color: var.$dark_grey;
     }
 }
@@ -40,8 +41,8 @@
     }
 
     &__body {
-        margin: 0 0 15px;
         color: var.$white;
+        margin: 0 0 15px;
     }
 
     &__link {
