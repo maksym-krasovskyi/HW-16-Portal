@@ -2,7 +2,8 @@
 @use '../base/_typography';
 
 .main,
-.footer {
+.footer,
+.header {
     display: flex;
     flex-direction: column;
     max-width: 1440px;

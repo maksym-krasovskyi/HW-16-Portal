@@ -17,6 +17,8 @@
 
     &__logo {
         max-width: 128px;
+        min-width: 80px;
+        margin: 0 10px 0 0;
     }
 
     &__content {
@@ -28,9 +30,11 @@
     &__upper {
         display: flex;
         flex-direction: row;
+        max-width: 710px;
         width: 100%;
         margin: 0 0 84px;
-        gap: 111px;
+        gap: 10px;
+        justify-content: space-between;
     }
 
     &__lower {

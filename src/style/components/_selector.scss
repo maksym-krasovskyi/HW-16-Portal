@@ -1,14 +1,7 @@
 @use '../abstracts/_variables.scss' as var;
 @use '../base/_typography';
 
-span {
-    color: var.$medium_grey_footer;
-    font-weight: 400;
-    font-size: 11px;
-    line-height: 17px;
-}
-
-.list-choice {
+.selector {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,6 +13,9 @@ span {
     background-color: var.$footer_bg;
     position: relative;
     cursor: pointer;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 17px;
 
     &__title {
         max-width: 250px;
@@ -31,23 +27,27 @@ span {
         box-sizing: border-box;
     }
 
-    &__objects {
-        position: absolute;
-        top: 0;
-        padding-top: 40px;
-        box-sizing: border-box;
-        width: 100%;
-        overflow: hidden;
-        max-height: 0;
-        transition: all 250ms ease;
+    &:hover &__title {
+        border-radius: 5px 5px 0 0;
     }
+}
 
-    & input[type='radio'] {
+.objects {
+    position: absolute;
+    top: 0;
+    padding-top: 40px;
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+    max-height: 0;
+    transition: all 250ms ease;
+
+    &__input {
         display: none;
     }
 
-    & input[type='radio'] + p {
-        color: #fff;
+    &__input + &__body {
+        color: var.$white;
         background: var.$dark_grey;
         display: block;
         text-align: center;
@@ -57,48 +57,48 @@ span {
         padding: 10px;
     }
 
-    &:hover .list-choice__title {
-        border-radius: 5px 5px 0 0;
+    &__label:nth-last-of-type(1) &__body {
+        border-radius: 0 0 5px 5px;
     }
 }
 
-.list-choice__objects label:nth-last-of-type(1) p {
-    border-radius: 0 0 5px 5px;
-}
-
-.list-choice:hover .list-choice__objects input[type='radio'] + p {
-    position: relative;
-    top: 0;
-    transition: all 250ms ease-in-out;
-}
-
-.list-choice:hover input[type='radio'] + p:hover {
-    background: var.$medium_grey;
-}
-
-.list-choice:hover input[type='radio']:checked + p:hover {
-    background: #74d68e;
-}
-
-.list-choice input[type='radio']:checked + p {
+.selector .objects__input:checked + .objects__body {
     background: var.$footer_bg;
     position: absolute;
     top: 0;
     border-radius: 5px;
 }
 
-.list-choice:hover input[type='radio']:checked + p {
+.selector:hover .objects__input:checked + .objects__body {
     border-radius: 0;
 }
 
-.list-choice:hover
-    .list-choice__objects
-    label:nth-last-of-type(1)
-    input[type='radio']:checked
-    + p {
+.selector:hover .objects .objects__input + .objects__body {
+    position: relative;
+    top: 0;
+    transition: all 250ms ease-in-out;
+}
+
+.selector:hover .objects__input + .objects__body:hover {
+    background: var.$medium_grey;
+}
+
+.selector:hover .objects__input:checked + .objects__body:hover {
+    background: var.$green;
+}
+
+.selector:hover
+    .objects
+    .objects__label:nth-last-of-type(1)
+    .objects__input:checked
+    + .objects__body {
     border-radius: 0 0 5px 5px;
 }
 
-.list-choice:hover .list-choice__objects {
+.selector:hover .objects {
     max-height: 250px;
+}
+
+.grey {
+    color: var.$medium_grey_footer;
 }

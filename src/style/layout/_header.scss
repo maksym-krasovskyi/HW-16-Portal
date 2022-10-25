@@ -13,29 +13,33 @@
     }
 
     &__logo {
-        margin: 22px 0 10px;
+        margin: 22px 10px 10px 0;
+        min-width: 80px;
+        max-width: 94px;
     }
 
     &__right {
         display: flex;
         flex-direction: row;
         max-width: 485px;
+        width: 100%;
         margin: 25px 0 27px;
-        gap: 100px;
+        justify-content: space-between;
+        gap: 10px;
     }
 }
 
 .nav {
     display: flex;
-    width: 100%;
     align-items: center;
-    max-width: 293px;
+    flex: 0 1 293px;
 
     &__list {
         display: flex;
         flex-direction: row;
         list-style: none;
-        gap: 48px;
+        flex: 0 1 293px;
+        justify-content: space-between;
     }
 }
 

@@ -2,7 +2,7 @@
 @use '../base/_typography';
 @use '../base/containers';
 
-.models {
+.products {
     display: flex;
     width: 100%;
     justify-content: center;
@@ -16,7 +16,7 @@
     }
 }
 
-.models-cell {
+.products-cell {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,7 +39,6 @@
 
     &__link {
         margin: 0 0 22px;
-        color: var.$white;
     }
 }
 
