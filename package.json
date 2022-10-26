@@ -6,9 +6,10 @@
     "homepage": "https://maksym-krasovskyi.github.io/HW-16-Portal/",
     "scripts": {
         "start": "webpack serve",
+        "build": "webpack",
         "test": "echo \"Error: no test specified\" && exit 1",
-        "deploy": "gh-pages -d start ",
-        "predeploy": "npm run start"
+        "deploy": "gh-pages -d public",
+        "predeploy": "npm run build"
     },
     "author": "",
     "license": "ISC",

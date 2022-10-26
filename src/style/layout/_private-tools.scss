@@ -16,7 +16,7 @@
 }
 
 .private {
-    background-image: url('../img/private.png');
+    background-image: url('/img/private.png');
 
     &__heading {
         color: var.$dark_dlue;
@@ -34,7 +34,7 @@
 }
 
 .tools {
-    background-image: url('../img/tools.png');
+    background-image: url('/img/tools.png');
 
     &__heading {
         color: var.$white;

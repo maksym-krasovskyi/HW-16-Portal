@@ -14,10 +14,12 @@
     &__img {
         display: flex;
         min-width: 0;
+        max-width: 632px;
         width: 100%;
     }
 
     &__content {
+        width: 50%;
         margin: 8px 0 0;
     }
 
