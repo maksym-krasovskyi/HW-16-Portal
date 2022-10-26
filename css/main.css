@@ -182,7 +182,8 @@ img {
 }
 
 .main,
-.footer {
+.footer,
+.header {
   display: flex;
   flex-direction: column;
   max-width: 1440px;
@@ -435,6 +436,8 @@ img {
 
 .header {
   display: flex;
+  max-width: 1440px;
+  width: 100%;
   justify-content: center;
 }
 .header__body {
