@@ -182,8 +182,7 @@ img {
 }
 
 .main,
-.footer,
-.header {
+.footer {
   display: flex;
   flex-direction: column;
   max-width: 1440px;
@@ -480,7 +479,7 @@ img {
   display: flex;
   width: 100%;
   justify-content: center;
-  background-image: url("/img/banner.png");
+  background-image: url("../img/banner.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -521,8 +520,9 @@ img {
   flex-direction: row;
   align-items: center;
   position: absolute;
+  max-width: 499px;
   bottom: -22px;
-  left: -88px;
+  left: -59px;
   gap: 17px;
   background-color: #f1c0c7;
 }
@@ -574,19 +574,19 @@ img {
 }
 
 .cell-1 {
-  background-image: url("/img/Portal TV.png");
+  background-image: url("../img/Portal TV.png");
 }
 
 .cell-2 {
-  background-image: url("/img/Portal.png");
+  background-image: url("../img/Portal.png");
 }
 
 .cell-3 {
-  background-image: url("/img/Portal+.png");
+  background-image: url("../img/Portal+.png");
 }
 
 .cell-4 {
-  background-image: url("/img/Portal Mini.png");
+  background-image: url("../img/Portal Mini.png");
 }
 
 .keeps-every {
@@ -644,8 +644,8 @@ img {
 }
 .messengers__img {
   display: flex;
-  min-width: 0;
   max-width: 632px;
+  min-width: 0;
   width: 100%;
 }
 .messengers__content {
@@ -677,7 +677,7 @@ img {
   display: flex;
   width: 100%;
   justify-content: center;
-  background-image: url("/img/story_time.png");
+  background-image: url("../img/story_time.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -770,7 +770,7 @@ img {
 }
 
 .private {
-  background-image: url("/img/private.png");
+  background-image: url("../img/private.png");
 }
 .private__heading {
   color: #1b365d;
@@ -785,7 +785,7 @@ img {
 }
 
 .tools {
-  background-image: url("/img/tools.png");
+  background-image: url("../img/tools.png");
 }
 .tools__heading {
   color: #fff;
