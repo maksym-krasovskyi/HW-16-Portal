@@ -179,6 +179,7 @@ img {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+<<<<<<< HEAD
 }
 
 .main,
@@ -289,6 +290,119 @@ img {
   height: 40px;
 }
 
+=======
+}
+
+.main,
+.footer,
+.header {
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  max-width: 1322px;
+  width: 100%;
+  padding: 0 29px;
+}
+
+.container-1 {
+  display: flex;
+  max-width: 1348px;
+  width: 100%;
+  padding: 0 29px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: 0.6s, filter 0.6s ease-in-out;
+}
+
+.btn-s {
+  flex: 0 0 92px;
+  height: 28px;
+}
+
+.btn-m {
+  max-width: 103px;
+  width: 100%;
+  height: 40px;
+}
+
+.btn-l {
+  max-width: 108px;
+  width: 100%;
+  height: 46px;
+}
+
+.btn-xl {
+  flex: 0 0 186px;
+  height: 46px;
+}
+
+.btn-xxl {
+  flex: 0 0 193px;
+  height: 46px;
+}
+
+.btn-outline {
+  border: solid 1px #000;
+  border-radius: 4px;
+}
+
+.btn-rounded {
+  border-radius: 24px;
+}
+
+.btn-success {
+  border-color: #a7bbc9;
+  color: #1b365d;
+}
+.btn-success:hover {
+  border: solid 1px #a7bbc9;
+  background-color: #a7bbc9;
+  color: #fff;
+}
+
+.btn-secondary {
+  background-color: #fff;
+  color: #1b365d;
+}
+.btn-secondary:hover {
+  background-color: #1b365d;
+  color: #fff;
+}
+
+.btn-primary {
+  background-color: #1877f2;
+  color: #fff;
+}
+.btn-primary:hover {
+  background-color: #fff;
+  color: #1b365d;
+  border: 1px solid #1877f2;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.link-m {
+  max-width: 120px;
+  width: 100%;
+  height: 40px;
+}
+
+>>>>>>> a3a5504539cb5435cad4d75a51b796112d0b53ee
 .link-l {
   max-width: 127px;
   width: 100%;
@@ -435,8 +549,11 @@ img {
 
 .header {
   display: flex;
+<<<<<<< HEAD
   max-width: 1440px;
   margin: 0 auto;
+=======
+>>>>>>> a3a5504539cb5435cad4d75a51b796112d0b53ee
   justify-content: center;
 }
 .header__body {
@@ -481,7 +598,11 @@ img {
   display: flex;
   width: 100%;
   justify-content: center;
+<<<<<<< HEAD
   background-image: url("../img/banner.png");
+=======
+  background-image: url("/img/banner.png");
+>>>>>>> a3a5504539cb5435cad4d75a51b796112d0b53ee
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -522,9 +643,14 @@ img {
   flex-direction: row;
   align-items: center;
   position: absolute;
+<<<<<<< HEAD
   max-width: 499px;
   bottom: -22px;
   left: -59px;
+=======
+  bottom: -22px;
+  left: -88px;
+>>>>>>> a3a5504539cb5435cad4d75a51b796112d0b53ee
   gap: 17px;
   background-color: #f1c0c7;
 }
@@ -576,6 +702,7 @@ img {
 }
 
 .cell-1 {
+<<<<<<< HEAD
   background-image: url("../img/Portal TV.png");
 }
 
@@ -589,6 +716,21 @@ img {
 
 .cell-4 {
   background-image: url("../img/Portal Mini.png");
+=======
+  background-image: url("/img/Portal TV.png");
+}
+
+.cell-2 {
+  background-image: url("/img/Portal.png");
+}
+
+.cell-3 {
+  background-image: url("/img/Portal+.png");
+}
+
+.cell-4 {
+  background-image: url("/img/Portal Mini.png");
+>>>>>>> a3a5504539cb5435cad4d75a51b796112d0b53ee
 }
 
 .keeps-every {
@@ -646,8 +788,13 @@ img {
 }
 .messengers__img {
   display: flex;
+<<<<<<< HEAD
   max-width: 632px;
   min-width: 0;
+=======
+  min-width: 0;
+  max-width: 632px;
+>>>>>>> a3a5504539cb5435cad4d75a51b796112d0b53ee
   width: 100%;
 }
 .messengers__content {
@@ -679,7 +826,11 @@ img {
   display: flex;
   width: 100%;
   justify-content: center;
+<<<<<<< HEAD
   background-image: url("../img/story_time.png");
+=======
+  background-image: url("/img/story_time.png");
+>>>>>>> a3a5504539cb5435cad4d75a51b796112d0b53ee
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -772,7 +923,11 @@ img {
 }
 
 .private {
+<<<<<<< HEAD
   background-image: url("../img/private.png");
+=======
+  background-image: url("/img/private.png");
+>>>>>>> a3a5504539cb5435cad4d75a51b796112d0b53ee
 }
 .private__heading {
   color: #1b365d;
@@ -787,7 +942,11 @@ img {
 }
 
 .tools {
+<<<<<<< HEAD
   background-image: url("../img/tools.png");
+=======
+  background-image: url("/img/tools.png");
+>>>>>>> a3a5504539cb5435cad4d75a51b796112d0b53ee
 }
 .tools__heading {
   color: #fff;
